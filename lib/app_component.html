@@ -1,0 +1,31 @@
+<header class="material-header shadow">
+    <div class="material-header-row">
+        <material-button icon class="material-drawer-button" (trigger)="drawer.toggle()">
+            <material-icon icon="menu"></material-icon>
+        </material-button>
+        <span class="material-header-title">Shockbytes</span>
+        <div class="material-spacer"></div>
+    </div>
+</header>
+<material-drawer persistent #drawer="drawer">
+    <div group class="mat-drawer-spacer"></div>
+    <div group>
+        <material-list-item (trigger)="drawerSelect(0)">
+            <material-icon icon="home"></material-icon>
+            Home
+        </material-list-item>
+        <material-list-item (trigger)="drawerSelect(1)">
+            <material-icon icon="account_circle"></material-icon>
+            About me
+        </material-list-item>
+        <material-list-item (trigger)="drawerSelect(2)">
+            <material-icon icon="apps"></material-icon>
+            Apps
+        </material-list-item>
+    </div>
+</material-drawer>
+<material-content>
+    <div class="material-content">
+        <router-outlet></router-outlet>
+    </div>
+</material-content>

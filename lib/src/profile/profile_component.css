@@ -1,0 +1,47 @@
+
+.profile_card {
+
+    padding: 20px;
+
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 4px;
+
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-icon {
+    width: 126px;
+    height: 126px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #424242;
+}
+
+.profile-name {
+    color: #424242;
+    font-size: x-large;
+    margin: 28px auto 12px;
+}
+
+.profile-job {
+    color: #646464;
+    font-size: large;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.profile-mail {
+    color: #868686;
+    font-size: medium;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}

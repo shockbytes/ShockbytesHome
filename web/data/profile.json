@@ -1,0 +1,73 @@
+{
+  "me": {
+    "name": "Martin Macheiner, BSc.",
+    "job": "Mobile Developer",
+    "mail": "martin_macheiner@outlook.com",
+    "icon": "/data/profile_res/me.png"
+  },
+  "education": [
+    {
+      "title": "University of Applied Sciences Upper Austria",
+      "description": "TODO",
+      "summary": "Mobile Computing Master",
+      "location": "Hagenberg, AT",
+      "date": "Sep. 2016 - Jul. 2018",
+      "icon": "/data/profile_res/icon_education_hgb.png"
+    },
+    {
+      "title": "University of Applied Sciences Upper Austria",
+      "description": "TODO",
+      "summary": "TODO",
+      "location": "Hagenberg, AT",
+      "date": "Sep. 2013 - Jul. 2016",
+      "icon": "/data/profile_res/icon_education_hgb.png"
+    },
+    {
+      "title": "Secondary technical college",
+      "description": "TODO",
+      "summary": "Mobile Computing Bachelor",
+      "location": "Salzburg, AT",
+      "date": "Sep. 2008 - Jun. 2012",
+      "icon": "/data/profile_res/icon_education_sbg.png"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Java",
+      "icon": "",
+      "type": "lang",
+      "rating": 9
+    },
+    {
+      "name": "Kotlin",
+      "icon": "",
+      "type": "lang",
+      "rating": 7
+    },
+    {
+      "name": "Dart",
+      "icon": "",
+      "type": "lang",
+      "rating": 5
+    }
+  ],
+  "work": [
+    {
+      "title": "Freeletics",
+      "description": "TODO",
+      "summary": "Android Developer Intern",
+      "location": "Munich, GER",
+      "date": "Feb. 2016 - Jun. 2016",
+      "icon": "/data/profile_res/icon_work_freeletics.png"
+    },
+    {
+      "title": "Salzburger Banken Software (SBS)",
+      "description": "TODO",
+      "summary": "Android Developer Intern",
+      "location": "Salzburg, AT",
+      "date": "Jul. 2015 - Aug. 2015",
+      "icon": "/data/profile_res/icon_work_sbs.png"
+    }
+  ]
+}
+
