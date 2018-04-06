@@ -1,9 +1,8 @@
 import 'package:ShockbytesHome/src/service/blog_service.dart';
+import 'package:ShockbytesHome/src/service/model/blog_post.dart';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular_router/angular_router.dart';
-
-
 
 @Component(
   selector: 'home',
@@ -11,17 +10,21 @@ import 'package:angular_router/angular_router.dart';
     'home_component.css',
   ],
   templateUrl: 'home_component.html',
-  directives: const [
-    materialDirectives,
-    CORE_DIRECTIVES,
-    ROUTER_DIRECTIVES
-  ],
+  directives: const [materialDirectives, CORE_DIRECTIVES, ROUTER_DIRECTIVES],
   providers: const [materialProviders],
 )
-class HomeComponent {
+class HomeComponent implements OnInit {
+  BlogService _blogService;
+  List<BlogPost> posts;
 
-  BlogService blogService;
+  HomeComponent(this._blogService);
 
-  HomeComponent(this.blogService);
-
+  @override
+  ngOnInit() {
+    _blogService.posts().listen((data) {
+      if (data.length > 0) {
+        this.posts = new List.from(data);
+      }
+    });
+  }
 }

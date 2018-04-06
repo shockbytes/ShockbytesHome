@@ -5,7 +5,7 @@
     "version": "2.8.2",
     "icon": "/data/app_res/dante_icon.png",
     "banner_icon": "/data/app_res/dante_banner.png",
-    "playstore": "<a href='https://play.google.com/store/apps/details?id=at.shockbytes.dante&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>"
+    "playstore": "https://play.google.com/store/apps/details?id=at.shockbytes.dante&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
   },
   {
     "name": "Crypto Watcher",
@@ -13,7 +13,7 @@
     "version": "1.2.1",
     "icon": "/data/app_res/crypto_icon.png",
     "banner_icon": "/data/app_res/crypto_banner.png",
-    "playstore": "<a href='https://play.google.com/store/apps/details?id=at.shockbytes.coins&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>"
+    "playstore": "https://play.google.com/store/apps/details?id=at.shockbytes.coins&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
   },
   {
     "name": "Remi",
@@ -21,6 +21,6 @@
     "version": "2.0",
     "icon": "/data/app_res/remi_icon.png",
     "banner_icon": "/data/app_res/remi_banner.png",
-    "playstore": "<a href='https://play.google.com/store/apps/details?id=at.shockbytes.remote&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>"
+    "playstore": "https://play.google.com/store/apps/details?id=at.shockbytes.remote&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
   }
 ]

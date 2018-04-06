@@ -1,34 +1,86 @@
 <div class="profile_card" style="margin-top: 48px">
-    <img class="profile-icon" [src]="me.icon">
-    <div class="profile-name">{{me.name}}</div>
-    <div class="profile-job">{{me.job}}</div>
-    <div class="profile-mail">{{me.mail}}</div>
+    <img class="profile-icon" [src]="me?.icon">
+    <div class="profile-name">{{me?.name}}</div>
+    <div class="profile-job">{{me?.job}}</div>
+    <div class="profile-mail">{{me?.mail}}</div>
 </div>
 
+<!-- Education card -->
 <div class="profile_card">
-    <div>
-        <material-icon icon="school" style="float: left"></material-icon>
-        <h4 style="float: left; vertical-align: center">Education</h4>
+    <div class="profile_card_header">
+        <material-icon icon="school" style="margin-right: 8px" baseline></material-icon>
+        Education
+    </div>
+    <div class="profile_card_content">
+        <a *ngFor="let e of education">
+            <div>
+                <img class="work-education-icon" [src]="e.icon">
+                <div class="work-education-corpus">
+                    <div class="work-education-name">{{e.title}}</div>
+                    <div class="work-education-text-primary">{{e.summary}}</div>
+                    <div class="work-education-text-secondary">{{e.location}}</div>
+                    <div class="work-education-text-secondary">{{e.date}}</div>
+                    <div class="work-education-text">{{e.description}}</div>
+                </div>
+            </div>
+        </a>
     </div>
 </div>
 
+<!-- Skill card -->
 <div class="profile_card">
-    <div>
-        <material-icon icon="lightbulb_outline" style="float: left"></material-icon>
+    <div class="profile_card_header">
+        <material-icon icon="lightbulb_outline" style="margin-right: 8px" baseline></material-icon>
         Skills
     </div>
+    <div class="profile_card_content">
+        <div class="skill-item">
+            <a *ngFor="let skill of skills">
+                <img class="skill-icon" [src]="skill.icon">
+                <div>
+                    <div class="skill-name">{{skill.name}}</div>
+                    <bs-rating [(ngModel)]="skill.rating" [max]="max" [readonly]="isReadonly"
+                               class="skill-rating"></bs-rating>
+                </div>
+            </a>
+        </div>
+    </div>
+
 </div>
 
+<!-- Work card -->
 <div class="profile_card">
-    <div>
-        <material-icon icon="work"></material-icon>
+    <div class="profile_card_header">
+        <material-icon icon="work" style="margin-right: 8px" baseline></material-icon>
         Work
     </div>
+    <div class="profile_card_content">
+        <a *ngFor="let w of work">
+            <div>
+                <img class="work-education-icon" [src]="w.icon">
+                <div class="work-education-corpus">
+                    <div class="work-education-name">{{w.title}}</div>
+                    <div class="work-education-text-primary">{{w.summary}}</div>
+                    <div class="work-education-text-secondary">{{w.location}}</div>
+                    <div class="work-education-text-secondary">{{w.date}}</div>
+                    <div class="work-education-text">{{w.description}}</div>
+                </div>
+            </div>
+        </a>
+    </div>
+
 </div>
 
+<!-- Documents card -->
 <div class="profile_card">
-    <div>
-        <material-icon icon="attachment"></material-icon>
-        Additional documents
+    <div class="profile_card_header">
+        <material-icon icon="attachment" style="margin-right: 8px" baseline></material-icon>
+        Documents and Links
+    </div>
+    <div class="profile_card_content">
+        <a style="margin-left: 16px; margin-right: 16px;" href="/data/profile_res/resume.pdf" download>My Resume</a>
+        <a style="margin-left: 16px; margin-right: 16px;" href="https://github.com/shockbytes/"
+           target="_blank">Github</a>
+        <a style="margin-left: 16px; margin-right: 16px;" href="https://at.linkedin.com/in/machm" target="_blank">LinkedIn</a>
     </div>
 </div>

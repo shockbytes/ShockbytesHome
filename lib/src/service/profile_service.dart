@@ -1,17 +1,15 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:html';
+import 'dart:js';
 
 import 'package:ShockbytesHome/src/service/model/generic_profile_entry.dart';
 import 'package:ShockbytesHome/src/service/model/me.dart';
 import 'package:ShockbytesHome/src/service/model/skill.dart';
 import 'package:angular/angular.dart';
 
-
-
 @Injectable()
 class ProfileService {
-
   Map _json;
 
   ProfileService() {
@@ -21,28 +19,33 @@ class ProfileService {
   _loadProfileInformation() async {
     String jsonString = await HttpRequest.getString('/data/profile.json');
     _json = JSON.decode(jsonString);
-    print(_json.runtimeType);
-    print(_json.toString());
   }
 
   Me _parseMe() {
-    // TODO
-    return null;
+    return new Me.fromMap(_json['me']);
   }
 
   List<Skill> _parseSkills() {
-    // TODO
-    return null;
+    List<Skill> skills = new List<Skill>();
+    var data = _json['skills'];
+    data.map((f) => new Skill.fromMap(f)).forEach((s) => skills.add(s));
+    return skills;
   }
 
   List<GenericProfileEntry> _parseEducation() {
-    // TODO
-    return null;
+    return _parseGenericProfileEntryList(_json['education']);
   }
 
   List<GenericProfileEntry> _parseWork() {
-    // TODO
-    return null;
+    return _parseGenericProfileEntryList(_json['work']);
+  }
+
+  List<GenericProfileEntry> _parseGenericProfileEntryList(var json) {
+    List<GenericProfileEntry> entries = new List<GenericProfileEntry>();
+    json
+        .map((f) => new GenericProfileEntry.fromMap(f))
+        .forEach((gpe) => entries.add(gpe));
+    return entries;
   }
 
   Stream<Me> me() {
@@ -60,6 +63,4 @@ class ProfileService {
   Stream<List<GenericProfileEntry>> work() {
     return new Stream.fromFuture(new Future(_parseWork));
   }
-
-
 }

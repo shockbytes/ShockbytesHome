@@ -27,7 +27,11 @@ class AppsComponent implements OnInit {
 
   @override
   ngOnInit() {
-    _appService.apps().listen((data) => this.apps = new List.from(data));
+    _appService.apps().listen((data) {
+      if (data.length > 0) {
+        this.apps = new List.from(data);
+      }
+    });
   }
 
 }
