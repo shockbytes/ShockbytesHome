@@ -9,3 +9,6 @@ pubspec.lock
 doc/api/
 
 .idea/
+
+# Do not upload the firebase credentials
+/lib/src/service/model/firebase_credentials.dart

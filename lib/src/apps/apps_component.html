@@ -1,16 +1,20 @@
 <div style="margin-top: 48px" class="grid grid-pad">
     <a *ngFor="let app of apps" class="app_col">
-        <div class="app_card" >
+        <div class="app_card">
             <img class="app-banner" [src]="app.bannerIcon">
             <div>
                 <img class="app-icon" [src]="app.icon">
-                <div class="app-name">{{app.name}}</div>
+                <div>
+                    <div class="app-name">{{app.name}}</div>
+                    <div class="app-description">{{app.description}}</div>
+                </div>
             </div>
-
-            <!-- TODO Fix ng-href app binding -->
-            <a target="_blank" ng-href="https://play.google.com/store/apps/details?id=at.shockbytes.remote&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" style="float: right">
-                <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" style="margin-top: 4px; margin-bottom: 4px; height: 60px"/>
-            </a>
+            <div class="app-store-link">
+                <a target="_blank" href="{{app.pathToPlayStore}}">
+                    <img class="app-store-link-img"
+                         src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"/>
+                </a>
+            </div>
         </div>
     </a>
 </div>

@@ -23,7 +23,6 @@ import "package:ng_bootstrap/components/rating/rating.dart";
 )
 class ProfileComponent implements OnInit {
   num max = 10;
-  num rate = 7;
   bool isReadonly = true;
 
   Me me;
@@ -37,9 +36,14 @@ class ProfileComponent implements OnInit {
 
   @override
   ngOnInit() {
-    _profileService.me().listen((m) => me = m);
-    _profileService.skills().listen((s) => skills = new List.from(s));
-    _profileService.education().listen((e) => education = new List.from(e));
-    _profileService.work().listen((w) => work = new List.from(w));
+    if (!_isDataValid()) {
+      _profileService.me().listen((m) => me = m);
+      _profileService.skills().listen((s) => skills = new List.from(s));
+      _profileService.education().listen((e) => education = new List.from(e));
+      _profileService.work().listen((w) => work = new List.from(w));
+    }
   }
+
+  bool _isDataValid() =>
+      me != null && skills != null && education != null && work != null;
 }

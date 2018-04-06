@@ -63,6 +63,12 @@
       "rating": 5
     },
     {
+      "name": "Arduino",
+      "icon": "/data/profile_res/skill/icon_skill_arduino.png",
+      "type": "platform",
+      "rating": 7
+    },
+    {
       "name": "RxJava",
       "icon": "/data/profile_res/skill/icon_skill_rx.png",
       "type": "lib",

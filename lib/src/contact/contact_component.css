@@ -1,0 +1,25 @@
+
+.contact_card {
+
+    padding: 20px;
+
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 4px;
+
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow: auto;
+    width: 60%;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact_header {
+    color: #424242;
+    font-size: large;
+    text-align: left;
+    margin-bottom: 16px;
+}

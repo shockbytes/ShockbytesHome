@@ -1,8 +1,4 @@
 
-[class*='col']:last-of-type {
-    padding-right: 0;
-}
-
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -23,12 +19,10 @@ h4 {
 }
 
 .app_col {
-    width: 33%;
+    width: 50%;
     float: left;
     text-decoration: none;
-    padding-right: 15px;
-    padding-bottom: 20px;
-    padding-left: 15px;
+    padding: 10px;
 }
 
 .app_card {
@@ -51,23 +45,38 @@ h4 {
 }
 
 .app-icon {
-    display: inline-block;
-    margin-left: 24px;
-    margin-top: 16px;
-    width: 96px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 104px;
+    height: 104px;
     float: left;
-    clear: left;
-    margin-bottom: 20px;
-    height: 96px;
 }
 
 .app-name {
-    display: inline-block;
-    float: left;
     color: #424242;
-    font-size: x-large;
-    background: bisque;
-    margin: auto;
+    margin-top: 32px;
+    font-size: large;
+    text-align: left;
+}
+
+.app-description {
+    text-align: left;
+    clear: top;
+    color: #646464;
+    margin-top: 4px;
+    font-size: medium;
+}
+
+.app-store-link {
+    margin-top: 30px;
+    float: right;
+    clear: top;
+}
+
+.app-store-link-img {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    height: 75px;
 }
 
 .grid-pad {
