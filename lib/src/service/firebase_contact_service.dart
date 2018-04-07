@@ -23,8 +23,6 @@ class FirebaseContactService implements ContactService {
         storageBucket: credentials["storageBucket"]);
 
     _fbRefContactRequests = fb.database().ref("contact_request");
-
-    print("Firebase initialized");
   }
 
   @override

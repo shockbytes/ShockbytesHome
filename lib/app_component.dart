@@ -52,6 +52,7 @@ import 'package:angular_components/angular_components.dart';
 ])
 class AppComponent {
   final Router _router;
+  final contactFormEnabled = false;
 
   AppComponent(this._router);
 

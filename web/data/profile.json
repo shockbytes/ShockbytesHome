@@ -3,7 +3,9 @@
     "name": "Martin Macheiner, BSc.",
     "job": "Mobile Developer",
     "mail": "martin_macheiner@outlook.com",
-    "icon": "/data/profile_res/me.png"
+    "icon": "/data/profile_res/me.png",
+    "location": "Linz, Austria",
+    "age": 25
   },
   "education": [
     {

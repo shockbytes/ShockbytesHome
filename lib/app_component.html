@@ -24,7 +24,7 @@
         </material-list-item>
     </div>
     <div group class="mat-drawer-spacer"></div>
-    <div group>
+    <div group *ngIf="contactFormEnabled">
         <material-list-item (trigger)="showContact()">
             <material-icon icon="send"></material-icon>
             Contact

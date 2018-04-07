@@ -1,7 +1,7 @@
 <div class="profile_card" style="margin-top: 64px">
     <img class="profile-icon" [src]="me?.icon">
     <div class="profile-name">{{me?.name}}</div>
-    <div class="profile-job">{{me?.job}}</div>
+    <div class="profile-job">{{me?.age}} year old {{me?.job}}, based in {{me?.location}}.</div>
     <div class="profile-mail">{{me?.mail}}</div>
 </div>
 
@@ -78,9 +78,9 @@
         Documents and Links
     </div>
     <div class="profile_card_content">
-        <a style="margin-left: 16px; margin-right: 16px;" href="/data/profile_res/resume.pdf" download>My Resume</a>
-        <a style="margin-left: 16px; margin-right: 16px;" href="https://github.com/shockbytes/"
-           target="_blank">Github</a>
-        <a style="margin-left: 16px; margin-right: 16px;" href="https://at.linkedin.com/in/machm" target="_blank">LinkedIn</a>
+        <a class="attachment-link" href="/data/profile_res/resume.pdf" download>My Resume</a>
+        <a class="attachment-link" href="https://github.com/shockbytes/" target="_blank">Github</a>
+        <a class="attachment-link" href="https://medium.com/@mescht93" target="_blank">Medium Blog</a>
+        <a class="attachment-link" href="https://at.linkedin.com/in/machm" target="_blank">LinkedIn</a>
     </div>
 </div>
