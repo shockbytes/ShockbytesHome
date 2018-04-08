@@ -20,10 +20,12 @@ import 'package:angular_router/angular_router.dart';
 )
 class AppsComponent implements OnInit {
 
+  Router _router;
   AppService _appService;
+
   List<App> apps;
 
-  AppsComponent(this._appService);
+  AppsComponent(this._appService, this._router);
 
   @override
   ngOnInit() {
@@ -32,6 +34,10 @@ class AppsComponent implements OnInit {
         this.apps = new List.from(data);
       }
     });
+  }
+
+  onClickMoreApp(App app) {
+    print(app.name);
   }
 
 }

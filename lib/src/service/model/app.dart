@@ -5,6 +5,7 @@ class App {
   String icon;
   String bannerIcon;
   String pathToPlayStore;
+  String hasDetails;
 
   App(
       {this.name,
@@ -12,7 +13,8 @@ class App {
       this.version,
       this.icon,
       this.bannerIcon,
-      this.pathToPlayStore});
+      this.pathToPlayStore,
+      this.hasDetails});
 
   App.fromMap(Map map) {
     this.name = map['name'];
@@ -21,6 +23,7 @@ class App {
     this.icon = map['icon'];
     this.bannerIcon = map['banner_icon'];
     this.pathToPlayStore = map['playstore'];
+    this.hasDetails = map['details'];
   }
 
   @override

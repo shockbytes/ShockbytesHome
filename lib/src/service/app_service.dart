@@ -4,10 +4,20 @@ import 'dart:html';
 import 'dart:js';
 
 import 'package:ShockbytesHome/src/service/model/app.dart';
+import 'package:ShockbytesHome/src/service/model/remi_download.dart';
 import 'package:angular/angular.dart';
 
 @Injectable()
 class AppService {
+
+  Stream<List<App>> apps() {
+    return new Stream.fromFuture(new Future(_readApps));
+  }
+
+  Stream<List<RemiDownload>> remiDownloads() {
+    return new Stream.fromFuture(new Future(_readRemiDownloads));
+  }
+
   Future<List<App>> _readApps() async {
     List<App> apps = new List<App>();
     String jsonString = await HttpRequest.getString('./data/apps.json');
@@ -16,7 +26,12 @@ class AppService {
     return apps;
   }
 
-  Stream<List<App>> apps() {
-    return new Stream.fromFuture(new Future(_readApps));
+  Future<List<RemiDownload>> _readRemiDownloads() async {
+    List<RemiDownload> rd = new List<RemiDownload>();
+    String j = await HttpRequest.getString('./data/app_res/download_list.json');
+    JsArray data = JSON.decode(j);
+    data.map((f) => new RemiDownload.fromMap(f)).forEach((d) => rd.add(d));
+    return rd;
   }
+
 }
