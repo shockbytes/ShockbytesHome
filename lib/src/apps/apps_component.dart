@@ -36,8 +36,8 @@ class AppsComponent implements OnInit {
     });
   }
 
-  onClickMoreApp(App app) {
-    print(app.name);
+  onClickAppMore(App app) {
+    _router.navigate([app.detailLink]);
   }
 
 }

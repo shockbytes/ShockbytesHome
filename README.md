@@ -12,6 +12,7 @@ Personal homepage created with AngularDart.
 - [x] Apps CSS fix
 - [x] Profile Skills Icon fix
 - [ ] Contact form
+- [ ] Remi detail page with desktop app download
 
 ## License
 

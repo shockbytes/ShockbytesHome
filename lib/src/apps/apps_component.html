@@ -15,9 +15,7 @@
                          src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"/>
                 </a>
             </div>
-            <material-button *ngIf="app.hasDetails" (trigger)="onClickMoreApp(app)"
-                             style="clear: left; width: 80%; font-size: large; margin-top: 15px; margin-bottom: 10px">
-                MORE
+            <material-button *ngIf="app.hasDetails" (trigger)="onClickAppMore(app)" class="more-btn">MORE
             </material-button>
         </div>
     </a>

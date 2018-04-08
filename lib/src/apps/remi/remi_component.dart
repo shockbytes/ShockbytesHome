@@ -28,7 +28,12 @@ class RemiComponent implements OnInit {
 
   @override
   ngOnInit() {
-    _appService.remiDownloads().listen((d) => downloads = new List.from(d));
+    _appService.remiDownloads().listen((d) {
+      if (d.length > 0) {
+        downloads = new List.from(d);
+        downloads.forEach((r) => print(r.file));
+      }
+    });
   }
 
 }

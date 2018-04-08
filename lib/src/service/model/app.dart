@@ -5,7 +5,9 @@ class App {
   String icon;
   String bannerIcon;
   String pathToPlayStore;
-  String hasDetails;
+  String detailLink;
+
+  bool get hasDetails => detailLink.isNotEmpty;
 
   App(
       {this.name,
@@ -14,7 +16,7 @@ class App {
       this.icon,
       this.bannerIcon,
       this.pathToPlayStore,
-      this.hasDetails});
+      this.detailLink});
 
   App.fromMap(Map map) {
     this.name = map['name'];
@@ -23,11 +25,7 @@ class App {
     this.icon = map['icon'];
     this.bannerIcon = map['banner_icon'];
     this.pathToPlayStore = map['playstore'];
-    this.hasDetails = map['details'];
+    this.detailLink = map['detail_link'];
   }
 
-  @override
-  String toString() {
-    return "Name: $name\nDescription: $description\nVersion: $version\nIcon: $icon\nBackground: $bannerIcon\nPlaystore link: $pathToPlayStore";
-  }
 }

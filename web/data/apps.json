@@ -6,7 +6,7 @@
     "icon": "/data/app_res/dante_icon.png",
     "banner_icon": "/data/app_res/dante_banner.png",
     "playstore": "https://play.google.com/store/apps/details?id=at.shockbytes.dante&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
-    "details": false
+    "detail_link": ""
   },
   {
     "name": "Crypto Watcher",
@@ -15,7 +15,7 @@
     "icon": "/data/app_res/crypto_icon.png",
     "banner_icon": "/data/app_res/crypto_banner.png",
     "playstore": "https://play.google.com/store/apps/details?id=at.shockbytes.coins&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
-    "details": false
+    "detail_link": ""
   },
   {
     "name": "Remi - Remote Control",
@@ -24,6 +24,6 @@
     "icon": "/data/app_res/remi_icon.png",
     "banner_icon": "/data/app_res/remi_banner.png",
     "playstore": "https://play.google.com/store/apps/details?id=at.shockbytes.remote&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
-    "details": true
+    "detail_link": "Remi"
   }
 ]

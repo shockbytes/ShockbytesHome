@@ -79,6 +79,14 @@ h4 {
     height: 75px;
 }
 
+.more-btn {
+    clear: left;
+    width: 80%;
+    font-size: large;
+    margin-top: 15px;
+    margin-bottom: 10px
+}
+
 .grid-pad {
     padding: 4px 0;
 }
