@@ -4,17 +4,22 @@ import 'dart:html';
 import 'dart:js';
 
 import 'package:ShockbytesHome/src/service/model/app.dart';
-import 'package:ShockbytesHome/src/service/model/remi_download.dart';
+import 'package:ShockbytesHome/src/service/model/remi/remi_download.dart';
+import 'package:ShockbytesHome/src/service/model/remi/remi_feature.dart';
 import 'package:angular/angular.dart';
 
 @Injectable()
 class AppService {
-  Stream<List<App>> apps() {
-    return new Stream.fromFuture(new Future(_readApps));
+  Future<List<App>> apps() {
+    return new Future(_readApps);
   }
 
-  Stream<List<RemiDownload>> remiDownloads() {
-    return new Stream.fromFuture(new Future(_readRemiDownloads));
+  Future<List<RemiDownload>> remiDownloads() {
+    return new Future(_readRemiDownloads);
+  }
+
+  Future<List<RemiFeature>> remiFeatures() {
+    return new Future(_readRemiFeatures);
   }
 
   Future<List<App>> _readApps() async {
@@ -33,4 +38,14 @@ class AppService {
     data.map((f) => new RemiDownload.fromMap(f)).forEach((d) => rd.add(d));
     return rd;
   }
+
+  Future<List<RemiFeature>> _readRemiFeatures() async {
+    List<RemiFeature> rf = new List<RemiFeature>();
+    String j =
+    await HttpRequest.getString('/data/app_res/remi/features.json');
+    JsArray data = JSON.decode(j);
+    data.map((f) => new RemiFeature.fromMap(f)).forEach((f) => rf.add(f));
+    return rf;
+  }
+
 }

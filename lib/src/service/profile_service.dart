@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:html';
-import 'dart:js';
 
 import 'package:ShockbytesHome/src/service/model/generic_profile_entry.dart';
 import 'package:ShockbytesHome/src/service/model/me.dart';
@@ -10,34 +9,30 @@ import 'package:angular/angular.dart';
 
 @Injectable()
 class ProfileService {
-  Map _json;
 
-  ProfileService() {
-    _loadProfileInformation();
+  Future<Me> _parseMe() async{
+    String jsonString = await HttpRequest.getString('/data/profile_me.json');
+    return new Me.fromMap(JSON.decode(jsonString));
   }
 
-  _loadProfileInformation() async {
-    String jsonString = await HttpRequest.getString('/data/profile.json');
-    _json = JSON.decode(jsonString);
-  }
-
-  Me _parseMe() {
-    return new Me.fromMap(_json['me']);
-  }
-
-  List<Skill> _parseSkills() {
+  Future<List<Skill>> _parseSkills() async{
     List<Skill> skills = new List<Skill>();
-    var data = _json['skills'];
+    String jsonString = await HttpRequest.getString('/data/profile_skills.json');
+    var data = JSON.decode(jsonString);
     data.map((f) => new Skill.fromMap(f)).forEach((s) => skills.add(s));
     return skills;
   }
 
-  List<GenericProfileEntry> _parseEducation() {
-    return _parseGenericProfileEntryList(_json['education']);
+  Future<List<GenericProfileEntry>> _parseEducation() async {
+    String jsonString = await HttpRequest.getString('/data/profile_education.json');
+    var education = JSON.decode(jsonString);
+    return _parseGenericProfileEntryList(education);
   }
 
-  List<GenericProfileEntry> _parseWork() {
-    return _parseGenericProfileEntryList(_json['work']);
+  Future<List<GenericProfileEntry>> _parseWork() async {
+    String jsonString = await HttpRequest.getString('/data/profile_work.json');
+    var work = JSON.decode(jsonString);
+    return _parseGenericProfileEntryList(work);
   }
 
   List<GenericProfileEntry> _parseGenericProfileEntryList(var json) {
@@ -48,19 +43,19 @@ class ProfileService {
     return entries;
   }
 
-  Stream<Me> me() {
-    return new Stream.fromFuture(new Future(_parseMe));
+  Future<Me> me() {
+    return new Future(_parseMe);
   }
 
-  Stream<List<Skill>> skills() {
-    return new Stream.fromFuture(new Future(_parseSkills));
+  Future<List<Skill>> skills() {
+    return new Future(_parseSkills);
   }
 
-  Stream<List<GenericProfileEntry>> education() {
-    return new Stream.fromFuture(new Future(_parseEducation));
+  Future<List<GenericProfileEntry>> education() {
+    return new Future(_parseEducation);
   }
 
-  Stream<List<GenericProfileEntry>> work() {
-    return new Stream.fromFuture(new Future(_parseWork));
+  Future<List<GenericProfileEntry>> work() {
+    return new Future(_parseWork);
   }
 }

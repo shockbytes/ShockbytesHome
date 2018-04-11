@@ -37,10 +37,10 @@ class ProfileComponent implements OnInit {
   @override
   ngOnInit() {
     if (!_isDataValid()) {
-      _profileService.me().listen((m) => me = m);
-      _profileService.skills().listen((s) => skills = new List.from(s));
-      _profileService.education().listen((e) => education = new List.from(e));
-      _profileService.work().listen((w) => work = new List.from(w));
+      _profileService.me().then((m) => me = m);
+      _profileService.skills().then((s) => skills = new List.from(s));
+      _profileService.education().then((e) => education = new List.from(e));
+      _profileService.work().then((w) => work = new List.from(w));
     }
   }
 

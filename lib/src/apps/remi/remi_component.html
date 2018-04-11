@@ -1,6 +1,35 @@
-<div class="remi-main">
-    Remi Component
+<div class="remi">
+    <div class="remi-content">
+        <a *ngFor="let f of features">
+            <div class="feature_card">
+                <img class="feature-icon" [src]="f.icon">
+                <div class="feature-corpus">
+                    <div class="feature-name">{{f.title}}</div>
+                    <div class="feature-text">{{f.summary}}</div>
+                    <div class="feature-text">{{f.text}}</div>
+                </div>
+            </div>
+        </a>
+    </div>
 
-    <material-button raised style="right: 0;bottom: 0;position: absolute;">Download windows</material-button>
+    <div class="remi-download-section">
+        <p>Desktop Apps</p>
+        <material-button id="win-download" raised class="remi-download" ng-href="/data/misc/icon_java_48px.png">
+            <img class="remi-download-img" src="/data/misc/icon_windows_48px.png"/>
+            Download for Windows
+        </material-button>
+        <material-button id="jar-download" raised class="remi-download" style="clear: right"
+                         ng-href="/data/misc/icon_windows_48px.png">
+            <img class="remi-download-img" src="/data/misc/icon_java_48px.png"/>
+            Download JAR
+        </material-button>
+        <p style="margin-top: 30px">Android App</p>
+        <a target="_blank"
+           href="https://play.google.com/store/apps/details?id=at.shockbytes.remote&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+            <img style="width: 100%"
+                 src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"/>
+        </a>
+    </div>
+
 </div>
 

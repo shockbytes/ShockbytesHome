@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Welcome to Remi - Remote Control",
+    "summary": "Let's get started",
+    "icon": "/data/app_res/remi_icon.png",
+    "text": "Just follow the simple steps and see what you can do with Remi and how to connect to your computer"
+  },
+  {
+    "title": "Apps, Mouse, Files & Slide",
+    "summary": "All in your control.",
+    "icon": "/data/app_res/remi/img/apptour_image_2.png",
+    "text": "Remi let's you easily control your mouse, view all your files on the desktop, transfer files to your phone, start apps and control your current slide show. Remi provides all this functionality at your fingertip"
+  },
+  {
+    "title": "Get the Desktop App",
+    "summary" : "Download for Windows or as JAR.",
+    "icon": "/data/app_res/remi/img/apptour_image_3.png",
+    "text": "TODO"
+  },
+  {
+    "title": "Use Remi on your wrist",
+    "summary" : "Remi loves Wear OS by Google.",
+    "icon": "/data/app_res/remi/img/apptour_image_4.png",
+    "text": "Remi can also be used on your smart watch. It allows you to start your apps, click your mouse and control your presentation. The phone app must be active during the usage."
+  },
+  {
+    "title": "Everything's fine?",
+    "summary" : "Ready to roll?",
+    "icon": "/data/app_res/remi/img/apptour_image_5.png",
+    "text": "Now you are all settled to use Remi. Start the Desktop App and connect to it with your phone."
+  }
+]

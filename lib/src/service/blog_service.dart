@@ -16,7 +16,7 @@ class BlogService {
     return posts;
   }
 
-  Stream<List<BlogPost>> posts() {
-    return new Stream.fromFuture(new Future(_readPosts));
+  Future<List<BlogPost>> posts() {
+    return new Future(_readPosts);
   }
 }

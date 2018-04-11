@@ -21,10 +21,8 @@ class HomeComponent implements OnInit {
 
   @override
   ngOnInit() {
-    _blogService.posts().listen((data) {
-      if (data.length > 0) {
-        this.posts = new List.from(data);
-      }
+    _blogService.posts().then((data) {
+      this.posts = new List.from(data);
     });
   }
 }

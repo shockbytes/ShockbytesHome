@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Freeletics",
+    "description": "Working in a feature team, implement cross-device user settings, set up a cloud test environment, take care of offline workout synchronization, implement a discount campaign for a Google featuring (Play Store featuring).",
+    "summary": "Android Developer Intern",
+    "location": "Munich, GER",
+    "date": "Feb. 2016 - Jun. 2016",
+    "icon": "/data/profile_res/work/icon_work_freeletics.png"
+  },
+  {
+    "title": "Salzburger Banken Software (SBS)",
+    "description": "Writing an app for live monitoring events of ATMs, Firebase Cloud Messaging was used to communicate between the server and the smartphone. SBS software runs on 55% of all austrian and on 20% of all german ATMs (www.sbs.co.at).",
+    "summary": "Android Developer Intern",
+    "location": "Salzburg, AT",
+    "date": "Jul. 2015 - Aug. 2015",
+    "icon": "/data/profile_res/work/icon_work_sbs.png"
+  }
+]

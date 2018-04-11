@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Java",
+    "icon": "/data/profile_res/skill/icon_skill_java.png",
+    "type": "lang",
+    "rating": 9
+  },
+  {
+    "name": "Kotlin",
+    "icon": "/data/profile_res/skill/icon_skill_kotlin.png",
+    "type": "lang",
+    "rating": 7
+  },
+  {
+    "name": "Dart",
+    "icon": "/data/profile_res/skill/icon_skill_dart.png",
+    "type": "lang",
+    "rating": 5
+  },
+  {
+    "name": "C/C++",
+    "icon": "/data/profile_res/skill/icon_skill_c_cpp.png",
+    "type": "lang",
+    "rating": 4
+  },
+  {
+    "name": "C#",
+    "icon": "/data/profile_res/skill/icon_skill_c_sharp.png",
+    "type": "lang",
+    "rating": 5
+  },
+  {
+    "name": "Arduino",
+    "icon": "/data/profile_res/skill/icon_skill_arduino.png",
+    "type": "platform",
+    "rating": 7
+  },
+  {
+    "name": "RxJava",
+    "icon": "/data/profile_res/skill/icon_skill_rx.png",
+    "type": "lib",
+    "rating": 7
+  },
+  {
+    "name": "Git",
+    "icon": "/data/profile_res/skill/icon_skill_git.png",
+    "type": "tool",
+    "rating": 9
+  },
+  {
+    "name": "Android",
+    "icon": "/data/profile_res/skill/icon_skill_android.png",
+    "type": "platform",
+    "rating": 10
+  },
+  {
+    "name": "Wear OS by Google",
+    "icon": "/data/profile_res/skill/icon_skill_wear_os.png",
+    "type": "platform",
+    "rating": 10
+  }
+]

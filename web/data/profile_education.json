@@ -1,0 +1,26 @@
+[
+  {
+    "title": "University of Applied Sciences Upper Austria",
+    "description": "Machine Learning, Interactive Technologies, Computer Vision, Artificial Intelligence, Software Architecture, Agile Project Management, Mobile Sports, Automotive Computing, Sensors & Wireless Networks.",
+    "summary": "Mobile Computing Master",
+    "location": "Hagenberg, AT",
+    "date": "Sep. 2016 - Jul. 2018",
+    "icon": "/data/profile_res/education/icon_education_hgb.png"
+  },
+  {
+    "title": "University of Applied Sciences Upper Austria",
+    "description": "Project management, web services, Android, Windows Phone, iOS with Swift and Objective-C, Mobile Sports, cross platform development with Qt, embedded systems, Mobile Security & Encryption, shell scripts.",
+    "summary": "Mobile Computing Bachelor",
+    "location": "Hagenberg, AT",
+    "date": "Sep. 2013 - Jul. 2016",
+    "icon": "/data/profile_res/education/icon_education_hgb.png"
+  },
+  {
+    "title": "Secondary technical college",
+    "description": "Basics in electronics and electrical engineering, agile project management, introduction into Java, C, C++/Qt, µC and embedded systems, introduction into Linux/Android.",
+    "summary": "A-levels",
+    "location": "Salzburg, AT",
+    "date": "Sep. 2008 - Jun. 2012",
+    "icon": "/data/profile_res/education/icon_education_sbg.png"
+  }
+]

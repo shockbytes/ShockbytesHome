@@ -4,22 +4,16 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular_router/angular_router.dart';
 
-
 @Component(
   selector: 'apps',
   styleUrls: const [
     'apps_component.css',
   ],
   templateUrl: 'apps_component.html',
-  directives: const [
-    materialDirectives,
-    CORE_DIRECTIVES,
-    ROUTER_DIRECTIVES
-  ],
+  directives: const [materialDirectives, CORE_DIRECTIVES, ROUTER_DIRECTIVES],
   providers: const [materialProviders],
 )
 class AppsComponent implements OnInit {
-
   Router _router;
   AppService _appService;
 
@@ -29,15 +23,12 @@ class AppsComponent implements OnInit {
 
   @override
   ngOnInit() {
-    _appService.apps().listen((data) {
-      if (data.length > 0) {
-        this.apps = new List.from(data);
-      }
+    _appService.apps().then((data) {
+      this.apps = new List.from(data);
     });
   }
 
   onClickAppMore(App app) {
     _router.navigate([app.detailLink]);
   }
-
 }
