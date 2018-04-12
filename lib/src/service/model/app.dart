@@ -8,6 +8,8 @@ class App {
   String pathToPlayStore;
   String detailLink;
   bool hasDetails;
+  bool get isPublished => pathToPlayStore.trim().isNotEmpty;
+
 
   App(
       {this.name,

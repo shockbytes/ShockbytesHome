@@ -2,7 +2,7 @@
   {
     "name": "Dante - Book tracker",
     "short_name": "Dante",
-    "description" : "Keep track of your current books.",
+    "description": "Keep track of your current books.",
     "version": "2.8.2",
     "icon": "/data/app_res/dante_icon.png",
     "banner_icon": "/data/app_res/dante_banner.png",
@@ -13,7 +13,7 @@
   {
     "name": "Crypto Watcher",
     "short_name": "Crypto Watcher",
-    "description" : "Always have your coins at your finger tip.",
+    "description": "Always have your coins at your finger tip.",
     "version": "1.2.1",
     "icon": "/data/app_res/crypto_icon.png",
     "banner_icon": "/data/app_res/crypto_banner.png",
@@ -24,12 +24,34 @@
   {
     "name": "Remi - Remote Control",
     "short_name": "Remi",
-    "description" : "Comfortably control your PC with your phone.",
+    "description": "Comfortably control your PC with your phone.",
     "version": "2.0",
     "icon": "/data/app_res/remi_icon.png",
     "banner_icon": "/data/app_res/remi_banner.png",
     "playstore": "https://play.google.com/store/apps/details?id=at.shockbytes.remote&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
     "details_enabled": false,
     "detail_link": "Remi"
+  },
+  {
+    "name": "Corey - Training Mate",
+    "short_name": "Corey",
+    "description" : "Workout with your phone, web or watch.",
+    "version": "2.2",
+    "icon": "/data/app_res/corey_icon.png",
+    "banner_icon": "/data/app_res/corey_banner.png",
+    "playstore": "",
+    "details_enabled": false,
+    "detail_link": "Corey"
+  },
+  {
+    "name": "EmgApp - EmgFramework companion app",
+    "short_name": "EmgApp",
+    "description" : "Android application for master thesis.",
+    "version": "1.0",
+    "icon": "/data/app_res/emg_icon.png",
+    "banner_icon": "/data/app_res/emg_banner.png",
+    "playstore": "",
+    "details_enabled": false,
+    "detail_link": "EmgApp"
   }
 ]
