@@ -3,6 +3,7 @@ import 'package:ShockbytesHome/src/apps/dante/dante_component.dart';
 import 'package:ShockbytesHome/src/apps/dante/privacy/dante_privacy_component.dart';
 import 'package:ShockbytesHome/src/apps/remi/remi_component.dart';
 import 'package:ShockbytesHome/src/contact/contact_component.dart';
+import 'package:ShockbytesHome/src/docs/docs_component.dart';
 import 'package:ShockbytesHome/src/home/home_component.dart';
 import 'package:ShockbytesHome/src/profile/profile_component.dart';
 import 'package:ShockbytesHome/src/service/app_service.dart';
@@ -45,6 +46,7 @@ import 'package:angular_components/angular_components.dart';
   const Route(path: '/home', name: 'Home', component: HomeComponent),
   const Route(path: '/profile', name: 'Profile', component: ProfileComponent),
   const Route(path: '/apps', name: 'Apps', component: AppsComponent),
+  const Route(path: '/docs', name: 'Docs', component: DocsComponent),
   const Route(path: '/contact', name: 'Contact', component: ContactComponent),
   const Route(path: '/apps/remi', name: 'Remi', component: RemiComponent),
   const Route(path: '/apps/dante', name: 'Dante', component: DanteComponent),
@@ -56,7 +58,7 @@ import 'package:angular_components/angular_components.dart';
 ])
 class AppComponent {
   final Router _router;
-  final contactFormEnabled = false;
+  final contactFormEnabled = true;
 
   AppComponent(this._router);
 
@@ -72,6 +74,10 @@ class AppComponent {
 
       case 2:
         _router.navigate(['Apps']);
+        break;
+
+      case 3:
+        _router.navigate(['Docs']);
         break;
     }
   }

@@ -24,6 +24,8 @@ class AppsComponent implements OnInit {
   @override
   ngOnInit() {
     _appService.apps().then((data) {
+      // Filter unpublished
+      // data = data.where((app) => app.isPublished);
       this.apps = new List.from(data);
     });
   }

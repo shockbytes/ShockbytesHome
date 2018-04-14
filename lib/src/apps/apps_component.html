@@ -9,11 +9,13 @@
                     <div class="app-description">{{app.description}}</div>
                 </div>
             </div>
-            <div class="app-store-link">
-                <a target="_blank" href="{{app.pathToPlayStore}}">
-                    <img class="app-store-link-img"
-                         src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"/>
-                </a>
+            <div style="height: 125px">
+                <div class="app-store-link" *ngIf="app.isPublished">
+                    <a target="_blank" href="{{app.pathToPlayStore}}">
+                        <img class="app-store-link-img"
+                             src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"/>
+                    </a>
+                </div>
             </div>
             <material-button *ngIf="app.hasDetails" (trigger)="onClickAppMore(app)" class="more-btn">MORE ABOUT
                 {{app.shortName}}

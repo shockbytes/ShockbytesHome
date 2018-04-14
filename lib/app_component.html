@@ -22,6 +22,10 @@
             <material-icon icon="apps"></material-icon>
             Apps
         </material-list-item>
+        <material-list-item (trigger)="drawerSelect(3)">
+            <material-icon icon="attachment"></material-icon>
+            Docs & Links
+        </material-list-item>
     </div>
     <div group class="mat-drawer-spacer"></div>
     <div group *ngIf="contactFormEnabled">

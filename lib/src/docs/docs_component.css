@@ -1,0 +1,16 @@
+
+.link-div {
+    width: 45%;
+    text-align: match-parent;
+    float: left;
+    background: #fff;
+    padding: 20px;
+    font-size: large;
+    margin: 24px;
+    overflow: auto;
+}
+
+.link-div-img {
+    width: 48px;
+    margin-right: 30px
+}
