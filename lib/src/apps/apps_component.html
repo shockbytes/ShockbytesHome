@@ -10,6 +10,10 @@
                 </div>
             </div>
             <div style="height: 125px">
+                <material-button class="github-link" *ngIf="app.isOpenSource" (trigger)="onClickAppGithub(app)">
+                    <img class="github-icon" src="https://image.flaticon.com/icons/svg/25/25231.svg"/>
+                    Source code
+                </material-button>
                 <div class="app-store-link" *ngIf="app.isPublished">
                     <a target="_blank" href="{{app.pathToPlayStore}}">
                         <img class="app-store-link-img"

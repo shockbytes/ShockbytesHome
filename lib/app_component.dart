@@ -23,14 +23,6 @@ import 'package:angular_components/angular_components.dart';
   templateUrl: 'app_component.html',
   directives: const [
     materialDirectives,
-    HomeComponent,
-    ProfileComponent,
-    AppsComponent,
-    DeferredContentDirective,
-    MaterialButtonComponent,
-    FixedMaterialTabStripComponent,
-    MaterialIconComponent,
-    MaterialPersistentDrawerDirective,
     CORE_DIRECTIVES,
     ROUTER_DIRECTIVES
   ],
@@ -58,7 +50,7 @@ import 'package:angular_components/angular_components.dart';
 ])
 class AppComponent {
   final Router _router;
-  final contactFormEnabled = true;
+  final contactFormEnabled = false;
 
   AppComponent(this._router);
 

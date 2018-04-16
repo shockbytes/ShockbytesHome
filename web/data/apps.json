@@ -8,7 +8,8 @@
     "banner_icon": "/data/app_res/dante_banner.png",
     "playstore": "https://play.google.com/store/apps/details?id=at.shockbytes.dante&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
     "details_enabled": false,
-    "detail_link": "Dante"
+    "detail_link": "Dante",
+    "github": ""
   },
   {
     "name": "Crypto Watcher",
@@ -19,7 +20,8 @@
     "banner_icon": "/data/app_res/crypto_banner.png",
     "playstore": "https://play.google.com/store/apps/details?id=at.shockbytes.coins&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
     "details_enabled": false,
-    "detail_link": "CryptoWatcher"
+    "detail_link": "CryptoWatcher",
+    "github": ""
   },
   {
     "name": "Remi - Remote Control",
@@ -30,7 +32,8 @@
     "banner_icon": "/data/app_res/remi_banner.png",
     "playstore": "https://play.google.com/store/apps/details?id=at.shockbytes.remote&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
     "details_enabled": false,
-    "detail_link": "Remi"
+    "detail_link": "Remi",
+    "github": ""
   },
   {
     "name": "Corey - Training Mate",
@@ -41,7 +44,8 @@
     "banner_icon": "/data/app_res/corey_banner.png",
     "playstore": "",
     "details_enabled": false,
-    "detail_link": "Corey"
+    "detail_link": "Corey",
+    "github": "https://github.com/shockbytes/Corey"
   },
   {
     "name": "EmgApp - EmgFramework companion app",
@@ -52,6 +56,7 @@
     "banner_icon": "/data/app_res/emg_banner.png",
     "playstore": "",
     "details_enabled": false,
-    "detail_link": "EmgApp"
+    "detail_link": "EmgApp",
+    "github": "https://github.com/shockbytes/EmgApp"
   }
 ]

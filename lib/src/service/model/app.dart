@@ -7,9 +7,10 @@ class App {
   String bannerIcon;
   String pathToPlayStore;
   String detailLink;
+  String githubLink;
   bool hasDetails;
   bool get isPublished => pathToPlayStore.trim().isNotEmpty;
-
+  bool get isOpenSource => githubLink.trim().isNotEmpty;
 
   App(
       {this.name,
@@ -20,7 +21,8 @@ class App {
       this.bannerIcon,
       this.pathToPlayStore,
       this.hasDetails,
-      this.detailLink});
+      this.detailLink,
+      this.githubLink});
 
   App.fromMap(Map map) {
     this.name = map['name'];
@@ -32,5 +34,6 @@ class App {
     this.pathToPlayStore = map['playstore'];
     this.hasDetails = map['details_enabled'];
     this.detailLink = map['detail_link'];
+    this.githubLink = map['github'];
   }
 }

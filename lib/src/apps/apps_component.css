@@ -73,6 +73,18 @@ h4 {
     clear: top;
 }
 
+.github-link {
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+    clear: top;
+}
+
+.github-icon {
+    width: 48px;
+    margin-right: 15px
+}
+
 .app-store-link-img {
     margin-top: 4px;
     margin-bottom: 4px;

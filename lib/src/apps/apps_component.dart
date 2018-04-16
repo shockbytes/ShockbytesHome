@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:ShockbytesHome/src/service/app_service.dart';
 import 'package:ShockbytesHome/src/service/model/app.dart';
 import 'package:angular/angular.dart';
@@ -24,8 +26,6 @@ class AppsComponent implements OnInit {
   @override
   ngOnInit() {
     _appService.apps().then((data) {
-      // Filter unpublished
-      // data = data.where((app) => app.isPublished);
       this.apps = new List.from(data);
     });
   }
@@ -33,4 +33,9 @@ class AppsComponent implements OnInit {
   onClickAppMore(App app) {
     _router.navigate([app.detailLink]);
   }
+
+  onClickAppGithub(App app) {
+    new AnchorElement(href: app.githubLink).click();
+  }
+
 }
