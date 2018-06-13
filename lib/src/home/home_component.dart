@@ -22,7 +22,7 @@ class HomeComponent implements OnInit {
   @override
   ngOnInit() {
     _blogService.posts().then((data) {
-      this.posts = new List.from(data);
+      this.posts = new List.from(data.where((b) => b.isVisible));
     });
   }
 }

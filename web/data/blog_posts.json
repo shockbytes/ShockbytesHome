@@ -1,8 +1,23 @@
 [
   {
-    "title": "Shockbytes Homepage relaunch",
+    "title": "Master of Science in Engineering!",
+    "text": "I don't want to write about all the pain and the struggle of the recent months. I'm done. Finally I have my masters degree!",
+    "date": "13. July 2018",
+    "icon": "/data/blog_res/master.png",
+    "isVisible": false
+  },
+  {
+    "title": "My First Job!",
+    "text": "I've got my first job as an Android developer at Mimo, located in Vienna. I'm super excited to dive into full time Android development.",
+    "date": "13. June 2018",
+    "icon": "/data/blog_res/mimo.png",
+    "isVisible": true
+  },
+  {
+    "title": "Shockbytes Homepage Relaunch",
     "text": "After hours of hard work, awesome times while learning Dart, and not so awesome times loosing nerves with CSS and HTML, Shockbytes Home is finally online. Angular and Dart make the new homepage more shiny and beautiful than ever before!",
     "date": "07. Apr. 2018",
-    "icon": "/data/blog_res/launch_icon.png"
+    "icon": "/data/blog_res/launch_icon.png",
+    "isVisible": true
   }
 ]

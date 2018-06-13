@@ -5,6 +5,7 @@ class BlogPost {
   String text;
   String date;
   String icon;
+  bool isVisible;
 
   BlogPost({this.title, this.text, this.icon});
 
@@ -13,6 +14,7 @@ class BlogPost {
     this.text = map['text'];
     this.date = map['date'];
     this.icon = map['icon'];
+    this.isVisible = map['isVisible'];
   }
 
 }
