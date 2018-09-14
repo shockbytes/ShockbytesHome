@@ -1,5 +1,13 @@
 [
   {
+    "title": "Mimo",
+    "description": "Full time working on the Mimo Android App.",
+    "summary": "Android Developer",
+    "location": "Vienna, AUT",
+    "date": "Sep. 2018 - now",
+    "icon": "/data/profile_res/work/icon_work_mimo.png"
+  },
+  {
     "title": "Freeletics",
     "description": "Working in a feature team, implement cross-device user settings, set up a cloud test environment, take care of offline workout synchronization, implement a discount campaign for a Google featuring (Play Store featuring).",
     "summary": "Android Developer Intern",

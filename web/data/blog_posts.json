@@ -1,16 +1,16 @@
 [
   {
+    "title": "My First Job!",
+    "text": "I've got my first job as an Android developer at Mimo, located in Vienna. I'm super excited to dive into full time Android development.",
+    "date": "03. Sep, 2018",
+    "icon": "/data/blog_res/mimo.png",
+    "isVisible": true
+  },
+  {
     "title": "Master of Science in Engineering!",
     "text": "I don't want to write about all the pain and the struggle of the recent months. I'm done. Finally I have my masters degree!",
     "date": "13. July 2018",
     "icon": "/data/blog_res/master.png",
-    "isVisible": false
-  },
-  {
-    "title": "My First Job!",
-    "text": "I've got my first job as an Android developer at Mimo, located in Vienna. I'm super excited to dive into full time Android development.",
-    "date": "13. June 2018",
-    "icon": "/data/blog_res/mimo.png",
     "isVisible": true
   },
   {

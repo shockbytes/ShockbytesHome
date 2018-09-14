@@ -32,6 +32,11 @@ class DocsComponent implements OnInit {
         ..setAttribute("download", "Bachelor_Thesis_Martin_Macheiner.pdf")
         ..click();
     });
+    querySelector("#master_thesis").onClick.listen((_) {
+      new AnchorElement(href: "/data/profile_res/master_thesis_macheiner.pdf")
+        ..setAttribute("download", "Master_Thesis_Martin_Macheiner.pdf")
+        ..click();
+    });
     querySelector("#github").onClick.listen((_) {
       new AnchorElement(href: "https://github.com/shockbytes/")
         ..click();
